@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · all 55 trophies</title>
+<meta name="description" content="Offline guide and tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI: official names, descriptions and grades, cited guides, a platinum roadmap, missable flags and saved progress.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%232a1145'/%3E%3Ctext%20x='16'%20y='23'%20font-size='20'%20text-anchor='middle'%20fill='%23ff5da2'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="kicker">Grand Theft Auto VI · PlayStation 5</p>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="subtitle">All 55 trophies — official names, descriptions and grades, a cited guide for each, a roadmap to the platinum, and a tracker that remembers your progress.</p>
+    </div>
+    <div class="platinum-card" id="platinumCard" aria-label="Platinum progress">
+      <p class="platinum-label">Platinum · Vice Got a Price!</p>
+      <p class="platinum-pct" id="platinumPct">0%</p>
+      <div class="bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBar"><span id="progressFill"></span></div>
+      <p class="platinum-count" id="progressText">0 of 55 earned</p>
+      <p class="grade-counts" id="gradeCounts"></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tracker" aria-labelledby="trackerTitle">
+    <h2 id="trackerTitle">Trophy tracker</h2>
+    <div class="controls">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Name, description or guide…" autocomplete="off"></label>
+      <fieldset class="kind-filters" id="kindFilters" aria-label="Filter by kind">
+        <legend>Kind</legend>
+        <button type="button" data-kind="all" class="active">All <span id="countAll"></span></button>
+        <button type="button" data-kind="story">Story <span id="countStory"></span></button>
+        <button type="button" data-kind="missable">Missable <span id="countMissable"></span></button>
+        <button type="button" data-kind="collectibles">Collectibles <span id="countCollectibles"></span></button>
+        <button type="button" data-kind="activities">Activities <span id="countActivities"></span></button>
+        <button type="button" data-kind="online">Online <span id="countOnline"></span></button>
+      </fieldset>
+      <label class="grade-label">Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="toggle"><input id="spoiler" type="checkbox" checked> <span>Hide story spoilers until earned</span></label>
+      <label class="toggle"><input id="hideEarned" type="checkbox"> <span>Hide earned</span></label>
+      <div class="io">
+        <button id="export" type="button">Export progress (.json)</button>
+        <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      </div>
+    </div>
+    <p class="list-meta" id="listMeta"></p>
+    <p class="empty-note" id="onlineNote" hidden>There are no online trophies — all 55 unlock in single-player, offline. (PowerPyx trophy roadmap.)</p>
+    <ul class="trophy-list" id="trophyList"></ul>
+    <p class="list-empty" id="listEmpty" hidden>No trophies match these filters.</p>
+  </section>
+
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Roadmap to the platinum</h2>
+    <p class="roadmap-intro">PowerPyx rates the set 4/10 difficulty and about 200 hours, one playthrough, all offline — no online trophies, no difficulty settings, no mission medals. There is free roam after the story but no mission replay, so keep manual saves at the start and end of each chapter (15 manual slots).</p>
+    <ol class="stages">
+      <li>
+        <h3>Step 1 · Play the story <span class="hours">60–80 hours</span></h3>
+        <p>Finish all five chapters at your own pace. Story trophies pop automatically — 12 chapter and mission trophies plus the gold for the final mission. Along the way: do the <strong>Chapter 1 balcony meditation</strong> for Positive Mental Attitude (see the missable warning below), start the side-character questlines as they appear (Andy, Kenton, Billy, Randy, Tyrone, Bret), and scan vehicles and study animals whenever you see new ones — that progress counts toward 100% later.</p>
+        <p class="stage-trophies">Earns: the 18 story trophies, plus whatever activities you try on the way.</p>
+      </li>
+      <li>
+        <h3>Step 2 · The 100% Completion checklist <span class="hours">about 100 hours</span></h3>
+        <p>After the credits the checklist unlocks (Touch Pad, then Progress, then Stats, then 100% Completion). It is lenient — roughly 60% of true completion: any 100 optional missions, 200 of 277 vehicles scanned, 100 of 255 animals studied, 15 of 18 card sets, 70 of 80 challenges, 300 stunts, all 8 bank vaults, all 39 gang operations and all 15 Target Decks. Nothing on it is missable. This step also earns A Long Road (gold), Cunning Stunts, The Shootist, Don't Touch My Deck, One Last Thing, Maximum Withdrawal and most of the money and robbery trophies.</p>
+        <p class="stage-trophies">Earns: A Long Road and most of the grind trophies.</p>
+      </li>
+      <li>
+        <h3>Step 3 · Strangers &amp; Freaks and cleanup <span class="hours">about 10 hours</span></h3>
+        <p>Finish the 8 stranger mission strands and mop up whatever is left — the four trophies with no confirmed method yet (In The Beginning…, Bad Luck, I Guess, The Truth Is Out There, Ten Pin) are the ones to check the linked guides for. When the last trophy pops, the platinum follows immediately.</p>
+        <p class="stage-trophies">Earns: Strangers &amp; Freaks and the platinum.</p>
+      </li>
+    </ol>
+    <div class="warnings">
+      <div class="warning missable-warning">
+        <h3>⚠ The one possibly missable trophy</h3>
+        <p><strong>Positive Mental Attitude</strong> — meditate at every spot across Leonida. During Chapter 1, after the mission Down to Earth, Lucia talks about meditating in the kitchen in the morning and walks to the balcony at Jason's house. Follow her and choose Accept. That session may be required (still unconfirmed) and it is gone after Chapter 1. Do it when it appears. Everything else can be earned in free roam after the story.</p>
+      </div>
+      <div class="warning">
+        <h3>Cheats switch trophies off</h3>
+        <p>Turning on a cheat disables trophies and saving. Cheats only unlock after the story anyway — keep them off for the whole trophy run.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sources" aria-labelledby="sourcesTitle">
+    <h2 id="sourcesTitle">Sources</h2>
+    <p>Names, descriptions and grades are the official PlayStation list as published on PSN (Exophase and PSNProfiles, 18 November 2026). Every guide above is written for this entry in our own words and names its source beside it; no guide text is copied. The game launched 19 November 2026, so four trophies still have no confirmed unlock method — those guides say so instead of guessing.</p>
+    <ul id="sourceList"></ul>
+    <p class="offline-note">This guide works fully offline: it loads nothing over the network. Source links open only if you follow them.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Trophy Guide — an unofficial fan-made guide. Grand Theft Auto, GTA and Rockstar Games are trademarks of their owners; this guide uses no Rockstar logo, artwork or game screenshots. Data as of 19 November 2026.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
